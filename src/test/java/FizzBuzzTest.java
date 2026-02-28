@@ -22,4 +22,25 @@ class FizzBuzzTest {
     void testFizzBuzzMultiplo3y5() {
         assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(15));
     }
+
+    @Test
+    void testFizzBuzzConCero() {
+        assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(0));
+    }
+
+    @Test
+    void testFizzBuzzNumeroNegativoMultiplo3() {
+        assertEquals("Fizz", FizzBuzz.fizzbuzz(-3));
+    }
+
+    @Test
+    void testFizzBuzzNumeroNegativoNormal() {
+        assertEquals("-7", FizzBuzz.fizzbuzz(-7));
+    }
+
+    @Test
+    void testFizzBuzzNumeroGrande() {
+        assertEquals("Buzz", FizzBuzz.fizzbuzz(100));
+    }
+    
 }
